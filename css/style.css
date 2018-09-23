@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fin Reset CSS*/
+
+body{
+	font-family: 'Open Sans',sans-serif;
+}
+
+.navbar{
+	padding: 1.5rem 3rem;
+	box-shadow: 0 3px 5px rgba(0,0,0,.2);
+	background: #fff;
+}
+.navbar-brand{
+	font-weight: 800;
+	font-size: 1.7rem;
+	color: #222;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	font-size: 1.1rem;
+	color: #333;
+	padding: .5rem;
+}
+
+.btn-landy{
+	background: rgb(89,137,229);
+    background: linear-gradient(90deg, rgba(89,137,229,1) 0%, rgba(55,207,220,1) 100%);
+	border-radius: 30px;
+	border: none;
+	padding: 10px 45px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	font-size: 14.4px
+}
+
+
+
+.banner{
+	padding: 150px 0;
+	background: #f5f5f5;
+}
+
+.banner h1{
+	font-weight: 800;
+	font-size: 2.9rem;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.banner	p{
+	font-size: 1.1rem;
+	color: #777;
+	line-height: 1.5rem;
+	margin: 20px 0;
+}
+
+.banner .btn-landy-outline{
+	padding: 10px 45px;
+    border-radius: 40px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.works{
+	padding: 150px 0;
+}
+
+.section-title{
+	font-size: 2rem;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #333;
+}
+
+.content-image{
+	width: 800px;
+	margin: 0 auto;
+	border-top: solid 50px #f2f2f2;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	box-shadow: -5px 5px 40px rgba(0,0,0,.2);
+	position: relative;
+}
+.content-image img{
+	display: block;
+}
+.content-image:before{
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #FF4344;
+	position: absolute;
+	top: -30px;
+	left: 20px;
+	box-shadow: 20px 0 #99BB33, 40px 0 #FFBB55;
+}
+
+.works .item-works{
+	text-align: center;
+	margin-top: 80px;
+	color: #333;
+	padding: 50px;
+	width: 100%;
+	box-shadow: -10px 10px 30px rgba(0,0,0,.2);
+	position: relative;
+	display: inline-block;
+}
+
+
+.works .item-works span{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	background: rgb(89,137,229);
+    background: linear-gradient(90deg, rgba(89,137,229,1) 0%, rgba(55,207,220,1) 100%);
+	line-height: 50px;
+	font-size: 1.4rem;
+	border-radius: 50%;
+	box-shadow: -5px 5px 20px rgba(0,0,0,.2);
+	font-weight: 800;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.works .item-works{
+	transition: all .5s;
+}
+.works .active .item-works{
+	background: #f1f1f1;
+	transform: translateY(-25px);
+}
+
+.about{
+	padding: 150px 0;
+	background: #f1f1f1;
+
+}
+
+.about p{
+	font-size: 1.2rem;
+	font-weight: 300;
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.features{
+	padding: 150px 0;
+}
+
+.features .info .icono{
+	width: 50px;
+	margin-bottom: 30px;
+}
+
+.features .info h4{
+	font-size: 1.5rem;
+	color: #333;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+
+.features .info p{
+	font-size: 0.9rem;
+	color: #656565;
+	margin-bottom: 30px;
+	line-height: 1.98rem;
+}
+
+.feature-image{
+	width: 100%;
+}
+.content-image img{
+	width: 100%
+}
+
+
+.boton-responsive{
+	border: none;
+
+}
+.boton-responsive:focus{
+	outline: none;
+}
+.boton-responsive span{
+	display: block;
+	width: 30px;
+	height: 2px;
+	margin: 6px 0;
+	background: black;
+	transition: all .2s;
+}
+
+
+.boton-responsive.activo span:first-child{
+	transform: rotate(45deg) translate(5px,-5px);
+}
+.boton-responsive.activo span:nth-child(2){
+	display: none;
+}
+
+.boton-responsive.activo span:last-child{
+	transform: rotate(-45deg) translate(10px,0px);
+}
+
+.scrolltop{
+	width: 80px;
+    height: 40px;
+    position: fixed;
+    right: -55px;
+    bottom: 50%;
+    background-color: #5989e5;
+    background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
+    background-image: linear-gradient(to right, #5989e5, #37cfdc);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    transition: all .3s;
+}
+.scrolltop:hover{
+	right: 0;
+}
+
+.scrolltop span{
+	margin-left: 5px;
+}
+
+.scrolltop.activo{
+	opacity: 1;
+}
+
+.galeria .item{
+	padding: 10px;
+}
+.galeria .item img{
+	width: 100%;
+}
+
+
+.prev{
+	position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+    font-size: 35px;
+}
+
+.next{
+	position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+    font-size: 35px;
+}
+
+/*Laptops */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	
+	.image-banner{
+		width: 100%;
+	}
+}
+
+
+/*Media query para tablets*/
+@media screen and (min-width: 769px) and (max-width: 992px){
+	
+}
+
+
+/*Media Query para mobiles*/
+@media screen and (max-width: 768px){
+
+	.image-banner{
+		width: 100%;
+	}
+	.banner .btn-landy-outline {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+}
+
+
+
+
+
